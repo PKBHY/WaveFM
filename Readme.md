@@ -1,6 +1,6 @@
 # WaveFM
 
-WaveFM: A High-Fidelity Vocoder Based On Flow Matching. See audio demo at https://PKBHY.github.io/WaveFM
+WaveFM: A High-Fidelity and Efficient Vocoder Based on Flow Matching. See audio demo at https://PKBHY.github.io/WaveFM
 
 ## Basic Usage
 
