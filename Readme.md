@@ -1,6 +1,6 @@
 # WaveFM
 
-WaveFM: A High-Fidelity and Efficient Vocoder Based on Flow Matching. See audio demo at https://PKBHY.github.io/WaveFM
+WaveFM: A High-Fidelity and Efficient Vocoder Based on Flow Matching. See audio demo at https://PKBHY.github.io/WaveFM **(updated on 21 Oct, 2024, GMT)**
 
 ## Basic Usage
 
@@ -31,6 +31,3 @@ torch           2.0.1+cu118
 torchaudio      2.0.2+cu118
 tqdm            4.66.4
 ```
-
-## References
-- To be updated
