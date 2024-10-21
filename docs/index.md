@@ -14,203 +14,203 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 
 # Audio Samples
 
-<table><thead><tr><td align="center"><b>Ground Truth</b><br></td>
-<td align="center"><b>WaveFM   (6 steps)</b><br></td>
-<td align="center"><b>WaveFM   (1 step)</b><br></td>
-<td align="center"><b>BigVGAN  (6 steps)</b><br></td>
-<td align="center"><b>HifiGAN  (6 steps)</b><br></td>
-<td align="center"><b>DiffWave (6 steps)</b><br></td>
-<td align="center"><b>PriorGrad (6 steps)</b><br></td>
-<td align="center"><b>FreGrad  (6 steps)</b><br></td>
-<td align="center"><b>FastDiff  (6 steps)</b><br></td></tr></thead><tbody>
+<table><thead><tr><td align="center"><b>Ground</b><br><b>Truth</b></td>
+<td align="center"><b>WaveFM</b><br><b>(6 steps)</b></td>
+<td align="center"><b>WaveFM</b><br><b>(1 step)</b></td>
+<td align="center"><b>BigVGAN</b><br><b>(6 steps)</b></td>
+<td align="center"><b>HifiGAN</b><br><b>(6 steps)</b></td>
+<td align="center"><b>DiffWave</b><br><b>(6 steps)</b></td>
+<td align="center"><b>PriorGrad</b><br><b>(6 steps)</b></td>
+<td align="center"><b>FreGrad</b><br><b>(6 steps)</b></td>
+<td align="center"><b>FastDiff</b><br><b>(6 steps)</b></td></tr></thead><tbody>
 <tbody><tr><td colspan="9">Music 1</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Music 2</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\Al_James_-_Schoolboy_Facination.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\Al_James_-_Schoolboy_Facination.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\Al_James_-_Schoolboy_Facination.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\Al_James_-_Schoolboy_Facination.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\Al_James_-_Schoolboy_Facination.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\Al_James_-_Schoolboy_Facination.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\Al_James_-_Schoolboy_Facination.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\Al_James_-_Schoolboy_Facination.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\Al_James_-_Schoolboy_Facination.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Al_James_-_Schoolboy_Facination.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\Al_James_-_Schoolboy_Facination.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\Al_James_-_Schoolboy_Facination.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\Al_James_-_Schoolboy_Facination.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\Al_James_-_Schoolboy_Facination.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Al_James_-_Schoolboy_Facination.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Al_James_-_Schoolboy_Facination.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\Al_James_-_Schoolboy_Facination.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\Al_James_-_Schoolboy_Facination.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Music 3</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\Ben_Carrigan_-_We'll_Talk_About_It_All_Tonight.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Music 4</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\BKS_-_Too_Much.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\BKS_-_Too_Much.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\BKS_-_Too_Much.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\BKS_-_Too_Much.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\BKS_-_Too_Much.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\BKS_-_Too_Much.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\BKS_-_Too_Much.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\BKS_-_Too_Much.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\BKS_-_Too_Much.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\BKS_-_Too_Much.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\BKS_-_Too_Much.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\BKS_-_Too_Much.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\BKS_-_Too_Much.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\BKS_-_Too_Much.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\BKS_-_Too_Much.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\BKS_-_Too_Much.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\BKS_-_Too_Much.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\BKS_-_Too_Much.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Music 5</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\Zeno_-_Signs.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\Zeno_-_Signs.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\Zeno_-_Signs.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\Zeno_-_Signs.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\Zeno_-_Signs.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\Zeno_-_Signs.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\Zeno_-_Signs.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\Zeno_-_Signs.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\Zeno_-_Signs.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Zeno_-_Signs.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\Zeno_-_Signs.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\Zeno_-_Signs.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\Zeno_-_Signs.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\Zeno_-_Signs.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Zeno_-_Signs.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Zeno_-_Signs.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\Zeno_-_Signs.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\Zeno_-_Signs.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Bass</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\AM_Contra_-_Heart_Peripheral.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Drum</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\Actions_-_One_Minute_Smile.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\Actions_-_One_Minute_Smile.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\Actions_-_One_Minute_Smile.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\Actions_-_One_Minute_Smile.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\Actions_-_One_Minute_Smile.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\Actions_-_One_Minute_Smile.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\Actions_-_One_Minute_Smile.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\Actions_-_One_Minute_Smile.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\Actions_-_One_Minute_Smile.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Actions_-_One_Minute_Smile.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\Actions_-_One_Minute_Smile.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\Actions_-_One_Minute_Smile.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\Actions_-_One_Minute_Smile.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\Actions_-_One_Minute_Smile.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Actions_-_One_Minute_Smile.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Actions_-_One_Minute_Smile.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\Actions_-_One_Minute_Smile.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\Actions_-_One_Minute_Smile.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Vocal</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\Clara_Berry_And_Wooldog_-_Waltz_For_My_Victims.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Others</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\BKS_-_Bulldozer.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\BKS_-_Bulldozer.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\BKS_-_Bulldozer.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\BKS_-_Bulldozer.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\BKS_-_Bulldozer.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\BKS_-_Bulldozer.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\BKS_-_Bulldozer.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\BKS_-_Bulldozer.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\BKS_-_Bulldozer.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\BKS_-_Bulldozer.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\BKS_-_Bulldozer.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\BKS_-_Bulldozer.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\BKS_-_Bulldozer.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\BKS_-_Bulldozer.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\BKS_-_Bulldozer.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\BKS_-_Bulldozer.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\BKS_-_Bulldozer.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\BKS_-_Bulldozer.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Male 1</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\1089_134686_000007_000005.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\1089_134686_000007_000005.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\1089_134686_000007_000005.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\1089_134686_000007_000005.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\1089_134686_000007_000005.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\1089_134686_000007_000005.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\1089_134686_000007_000005.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\1089_134686_000007_000005.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\1089_134686_000007_000005.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\1089_134686_000007_000005.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\1089_134686_000007_000005.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\1089_134686_000007_000005.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\1089_134686_000007_000005.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\1089_134686_000007_000005.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\1089_134686_000007_000005.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\1089_134686_000007_000005.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\1089_134686_000007_000005.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\1089_134686_000007_000005.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Male 2</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\1089_134686_000024_000007.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\1089_134686_000024_000007.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\1089_134686_000024_000007.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\1089_134686_000024_000007.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\1089_134686_000024_000007.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\1089_134686_000024_000007.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\1089_134686_000024_000007.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\1089_134686_000024_000007.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\1089_134686_000024_000007.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\1089_134686_000024_000007.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\1089_134686_000024_000007.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\1089_134686_000024_000007.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\1089_134686_000024_000007.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\1089_134686_000024_000007.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\1089_134686_000024_000007.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\1089_134686_000024_000007.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\1089_134686_000024_000007.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\1089_134686_000024_000007.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Male 3</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\1188_133604_000011_000003.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\1188_133604_000011_000003.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\1188_133604_000011_000003.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\1188_133604_000011_000003.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\1188_133604_000011_000003.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\1188_133604_000011_000003.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\1188_133604_000011_000003.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\1188_133604_000011_000003.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\1188_133604_000011_000003.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\1188_133604_000011_000003.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\1188_133604_000011_000003.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\1188_133604_000011_000003.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\1188_133604_000011_000003.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\1188_133604_000011_000003.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\1188_133604_000011_000003.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\1188_133604_000011_000003.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\1188_133604_000011_000003.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\1188_133604_000011_000003.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Male 4</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\1188_133604_000018_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\1188_133604_000018_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\1188_133604_000018_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\1188_133604_000018_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\1188_133604_000018_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\1188_133604_000018_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\1188_133604_000018_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\1188_133604_000018_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\1188_133604_000018_000000.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Male 5</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\1320_122612_000013_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\1320_122612_000013_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\1320_122612_000013_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\1320_122612_000013_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\1320_122612_000013_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\1320_122612_000013_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\1320_122612_000013_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\1320_122612_000013_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\1320_122612_000013_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\1320_122612_000013_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\1320_122612_000013_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\1320_122612_000013_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\1320_122612_000013_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\1320_122612_000013_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\1320_122612_000013_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\1320_122612_000013_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\1320_122612_000013_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\1320_122612_000013_000000.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Female 1</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\121_127105_000014_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\121_127105_000014_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\121_127105_000014_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\121_127105_000014_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\121_127105_000014_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\121_127105_000014_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\121_127105_000014_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\121_127105_000014_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\121_127105_000014_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\121_127105_000014_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\121_127105_000014_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\121_127105_000014_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\121_127105_000014_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\121_127105_000014_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\121_127105_000014_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\121_127105_000014_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\121_127105_000014_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\121_127105_000014_000001.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Female 2</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\121_127105_000040_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\121_127105_000040_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\121_127105_000040_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\121_127105_000040_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\121_127105_000040_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\121_127105_000040_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\121_127105_000040_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\121_127105_000040_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\121_127105_000040_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\121_127105_000040_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\121_127105_000040_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\121_127105_000040_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\121_127105_000040_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\121_127105_000040_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\121_127105_000040_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\121_127105_000040_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\121_127105_000040_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\121_127105_000040_000000.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Female 3</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\237_126133_000033_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\237_126133_000033_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\237_126133_000033_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\237_126133_000033_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\237_126133_000033_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\237_126133_000033_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\237_126133_000033_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\237_126133_000033_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\237_126133_000033_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\237_126133_000033_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\237_126133_000033_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\237_126133_000033_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\237_126133_000033_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\237_126133_000033_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\237_126133_000033_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\237_126133_000033_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\237_126133_000033_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\237_126133_000033_000001.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Female 4</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\237_134493_000003_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\237_134493_000003_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\237_134493_000003_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\237_134493_000003_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\237_134493_000003_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\237_134493_000003_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\237_134493_000003_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\237_134493_000003_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\237_134493_000003_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\237_134493_000003_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\237_134493_000003_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\237_134493_000003_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\237_134493_000003_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\237_134493_000003_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\237_134493_000003_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\237_134493_000003_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\237_134493_000003_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\237_134493_000003_000000.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">Female 5</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\1284_1181_000045_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\1284_1181_000045_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\1WaveFM\1284_1181_000045_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\big-v-gan\1284_1181_000045_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\new-hifi-gan\1284_1181_000045_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\diffwave\1284_1181_000045_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad\1284_1181_000045_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\fregrad\1284_1181_000045_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff\1284_1181_000045_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\1284_1181_000045_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\1284_1181_000045_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\1284_1181_000045_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\1284_1181_000045_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\1284_1181_000045_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\1284_1181_000045_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\1284_1181_000045_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\1284_1181_000045_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\1284_1181_000045_000000.wav"></audio></td>
 </tr></tbody>
