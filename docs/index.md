@@ -14,15 +14,15 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 
 # Audio Samples
 
-<table><thead><tr><td align="center"><b>Ground Truth</b><br></td>
-<td align="center"><b>WaveFM   (6 steps)</b><br></td>
-<td align="center"><b>WaveFM   (1 step)</b><br></td>
-<td align="center"><b>BigVGAN  (6 steps)</b><br></td>
-<td align="center"><b>HifiGAN  (6 steps)</b><br></td>
-<td align="center"><b>DiffWave (6 steps)</b><br></td>
-<td align="center"><b>PriorGrad (6 steps)</b><br></td>
-<td align="center"><b>FreGrad  (6 steps)</b><br></td>
-<td align="center"><b>FastDiff  (6 steps)</b><br></td></tr></thead><tbody>
+<table><thead><tr><td align="center"><b>Ground<br>Truth</b></td>
+<td align="center"><b>WaveFM<br>(6 steps)</b></td>
+<td align="center"><b>WaveFM<br>(1 step)</b></td>
+<td align="center"><b>BigVGAN<br>(6 steps)</b></td>
+<td align="center"><b>HifiGAN<br>(6 steps)</b></td>
+<td align="center"><b>DiffWave<br>(6 steps)</b></td>
+<td align="center"><b>PriorGrad<br>(6 steps)</b></td>
+<td align="center"><b>FreGrad<br>(6 steps)</b></td>
+<td align="center"><b>FastDiff<br>(6 steps)</b></td></tr></thead><tbody>
 <tbody><tr><td colspan="9">Music 1</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\gt\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\6WaveFM\Alexander_Ross_-_Goodbye_Bolero.wav"></audio></td>
