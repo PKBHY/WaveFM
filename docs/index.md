@@ -17,8 +17,8 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <table><thead><tr><td align="center"><b>Ground</b><br><b>Truth</b></td>
 <td align="center"><b>WaveFM</b><br><b>(6 steps)</b></td>
 <td align="center"><b>WaveFM</b><br><b>(1 step)</b></td>
-<td align="center"><b>BigVGAN</b><br><b>(1 steps)</b></td>
-<td align="center"><b>HifiGAN</b><br><b>(1 steps)</b></td>
+<td align="center"><b>BigVGAN</b><br><b>(1 step)</b></td>
+<td align="center"><b>HifiGAN</b><br><b>(1 step)</b></td>
 <td align="center"><b>DiffWave</b><br><b>(6 steps)</b></td>
 <td align="center"><b>PriorGrad</b><br><b>(6 steps)</b></td>
 <td align="center"><b>FreGrad</b><br><b>(6 steps)</b></td>
