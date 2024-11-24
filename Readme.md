@@ -24,7 +24,7 @@ python inference.py
 
 ## Package Requirements
 
-WaveFM has been tested on the following requirements, and it should work fine with the latest version as well.
+WaveFM has been tested on `python 3.9` with the following requirements, and it should also work fine with the latest version.
 
 ```
 torch           2.0.1+cu118
