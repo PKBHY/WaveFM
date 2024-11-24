@@ -13,12 +13,12 @@ The total amount of parameters is `19.5M`. The 128-dim time embedding is expande
 For detailed parameter settings please refer to `WaveFM/src/params.py`.
 
 # Audio Samples
-
+ All models were trained with 1M steps. 
 <table><thead><tr><td align="center"><b>Ground</b><br><b>Truth</b></td>
 <td align="center"><b>WaveFM</b><br><b>(6 steps)</b></td>
 <td align="center"><b>WaveFM</b><br><b>(1 step)</b></td>
-<td align="center"><b>BigVGAN</b><br><b>(1 step)</b></td>
-<td align="center"><b>HifiGAN</b><br><b>(1 step)</b></td>
+<td align="center"><b>BigVGAN-base</b><br><b>(1 step)</b></td>
+<td align="center"><b>HifiGAN-V1</b><br><b>(1 step)</b></td>
 <td align="center"><b>DiffWave</b><br><b>(6 steps)</b></td>
 <td align="center"><b>PriorGrad</b><br><b>(6 steps)</b></td>
 <td align="center"><b>FreGrad</b><br><b>(6 steps)</b></td>
@@ -27,8 +27,8 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Actions_-_South_Of_The_Water.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\Actions_-_South_Of_The_Water.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\Actions_-_South_Of_The_Water.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\Actions_-_South_Of_The_Water.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\Actions_-_South_Of_The_Water.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\Actions_-_South_Of_The_Water.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\Actions_-_South_Of_The_Water.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Actions_-_South_Of_The_Water.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Actions_-_South_Of_The_Water.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\Actions_-_South_Of_The_Water.wav"></audio></td>
@@ -37,8 +37,8 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Enda_Reilly_-_Cur_An_Long_Ag_Seol.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\Enda_Reilly_-_Cur_An_Long_Ag_Seol.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\Enda_Reilly_-_Cur_An_Long_Ag_Seol.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\Enda_Reilly_-_Cur_An_Long_Ag_Seol.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\Enda_Reilly_-_Cur_An_Long_Ag_Seol.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\Enda_Reilly_-_Cur_An_Long_Ag_Seol.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\Enda_Reilly_-_Cur_An_Long_Ag_Seol.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Enda_Reilly_-_Cur_An_Long_Ag_Seol.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Enda_Reilly_-_Cur_An_Long_Ag_Seol.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\Enda_Reilly_-_Cur_An_Long_Ag_Seol.wav"></audio></td>
@@ -47,8 +47,8 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\James_May_-_If_You_Say.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\James_May_-_If_You_Say.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\James_May_-_If_You_Say.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\James_May_-_If_You_Say.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\James_May_-_If_You_Say.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\James_May_-_If_You_Say.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\James_May_-_If_You_Say.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\James_May_-_If_You_Say.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\James_May_-_If_You_Say.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\James_May_-_If_You_Say.wav"></audio></td>
@@ -57,8 +57,8 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Mu_-_Too_Bright.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\Mu_-_Too_Bright.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\Mu_-_Too_Bright.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\Mu_-_Too_Bright.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\Mu_-_Too_Bright.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\Mu_-_Too_Bright.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\Mu_-_Too_Bright.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Mu_-_Too_Bright.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Mu_-_Too_Bright.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\Mu_-_Too_Bright.wav"></audio></td>
@@ -67,8 +67,8 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Skelpolu_-_Resurrection.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\Skelpolu_-_Resurrection.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\Skelpolu_-_Resurrection.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\Skelpolu_-_Resurrection.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\Skelpolu_-_Resurrection.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\Skelpolu_-_Resurrection.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\Skelpolu_-_Resurrection.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Skelpolu_-_Resurrection.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Skelpolu_-_Resurrection.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\Skelpolu_-_Resurrection.wav"></audio></td>
@@ -77,8 +77,8 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Young_Griffo_-_Facade.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\Young_Griffo_-_Facade.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\Young_Griffo_-_Facade.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\Young_Griffo_-_Facade.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\Young_Griffo_-_Facade.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\Young_Griffo_-_Facade.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\Young_Griffo_-_Facade.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Young_Griffo_-_Facade.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Young_Griffo_-_Facade.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\Young_Griffo_-_Facade.wav"></audio></td>
@@ -87,8 +87,8 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Actions_-_Devil's_Words.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\Actions_-_Devil's_Words.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\Actions_-_Devil's_Words.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\Actions_-_Devil's_Words.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\Actions_-_Devil's_Words.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\Actions_-_Devil's_Words.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\Actions_-_Devil's_Words.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Actions_-_Devil's_Words.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Actions_-_Devil's_Words.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\Actions_-_Devil's_Words.wav"></audio></td>
@@ -97,8 +97,8 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Leaf_-_Summerghost.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\Leaf_-_Summerghost.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\Leaf_-_Summerghost.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\Leaf_-_Summerghost.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\Leaf_-_Summerghost.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\Leaf_-_Summerghost.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\Leaf_-_Summerghost.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Leaf_-_Summerghost.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Leaf_-_Summerghost.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\Leaf_-_Summerghost.wav"></audio></td>
@@ -107,8 +107,8 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Flags_-_54.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\Flags_-_54.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\Flags_-_54.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\Flags_-_54.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\Flags_-_54.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\Flags_-_54.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\Flags_-_54.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Flags_-_54.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Flags_-_54.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\Flags_-_54.wav"></audio></td>
@@ -117,8 +117,8 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\The_Wrong'Uns_-_Rothko.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\The_Wrong'Uns_-_Rothko.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\The_Wrong'Uns_-_Rothko.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\The_Wrong'Uns_-_Rothko.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\The_Wrong'Uns_-_Rothko.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\The_Wrong'Uns_-_Rothko.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\The_Wrong'Uns_-_Rothko.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\The_Wrong'Uns_-_Rothko.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\The_Wrong'Uns_-_Rothko.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\The_Wrong'Uns_-_Rothko.wav"></audio></td>
@@ -127,8 +127,8 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Bill_Chudziak_-_Children_Of_No-one.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\Bill_Chudziak_-_Children_Of_No-one.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\Bill_Chudziak_-_Children_Of_No-one.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\Bill_Chudziak_-_Children_Of_No-one.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\Bill_Chudziak_-_Children_Of_No-one.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\Bill_Chudziak_-_Children_Of_No-one.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\Bill_Chudziak_-_Children_Of_No-one.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Bill_Chudziak_-_Children_Of_No-one.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Bill_Chudziak_-_Children_Of_No-one.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\Bill_Chudziak_-_Children_Of_No-one.wav"></audio></td>
@@ -137,8 +137,8 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Fergessen_-_Nos_Palpitants.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\Fergessen_-_Nos_Palpitants.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\Fergessen_-_Nos_Palpitants.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\Fergessen_-_Nos_Palpitants.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\Fergessen_-_Nos_Palpitants.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\Fergessen_-_Nos_Palpitants.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\Fergessen_-_Nos_Palpitants.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Fergessen_-_Nos_Palpitants.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Fergessen_-_Nos_Palpitants.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\Fergessen_-_Nos_Palpitants.wav"></audio></td>
@@ -147,120 +147,130 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\84_121123_000015_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\84_121123_000015_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\84_121123_000015_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\84_121123_000015_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\84_121123_000015_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\84_121123_000015_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\84_121123_000015_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\84_121123_000015_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\84_121123_000015_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\84_121123_000015_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\84_121123_000015_000000.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 2</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\1272_135031_000054_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\1272_135031_000054_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\1272_135031_000054_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\1272_135031_000054_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\1272_135031_000054_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\1272_135031_000054_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\1272_135031_000054_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\1272_135031_000054_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\1272_135031_000054_000000.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 3</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\1673_143397_000031_000011.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\1673_143397_000031_000011.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\1673_143397_000031_000011.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\1673_143397_000031_000011.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\1673_143397_000031_000011.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\1673_143397_000031_000011.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\1673_143397_000031_000011.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\1673_143397_000031_000011.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\1673_143397_000031_000011.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 4</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\174_168635_000024_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\174_168635_000024_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\174_168635_000024_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\174_168635_000024_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\174_168635_000024_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\174_168635_000024_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\174_168635_000024_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\174_168635_000024_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\174_168635_000024_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\174_168635_000024_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\174_168635_000024_000001.wav"></audio></td>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 3</td></tr></tbody><tbody><tr>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\1188_133604_000018_000000.wav"></audio></td>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 4</td></tr></tbody><tbody><tr>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\1272_135031_000054_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\1272_135031_000054_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\1272_135031_000054_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\1272_135031_000054_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\1272_135031_000054_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\1272_135031_000054_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\1272_135031_000054_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\1272_135031_000054_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\1272_135031_000054_000000.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 5</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\2277_149896_000023_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\2277_149896_000023_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\2277_149896_000023_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\2277_149896_000023_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\2277_149896_000023_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\2277_149896_000023_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\2277_149896_000023_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\2277_149896_000023_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\2277_149896_000023_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\2277_149896_000023_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\2277_149896_000023_000001.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 6</td></tr></tbody><tbody><tr>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\3538_163624_000015_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\3538_163624_000015_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\3538_163624_000015_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\3538_163624_000015_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\3538_163624_000015_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\3538_163624_000015_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\3538_163624_000015_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\3538_163624_000015_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\3538_163624_000015_000000.wav"></audio></td>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 7</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\3752_4944_000062_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\3752_4944_000062_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\3752_4944_000062_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\3752_4944_000062_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\3752_4944_000062_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\3752_4944_000062_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\3752_4944_000062_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\3752_4944_000062_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\3752_4944_000062_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\3752_4944_000062_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\3752_4944_000062_000000.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 7</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\3576_138058_000048_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\3576_138058_000048_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\3576_138058_000048_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\3576_138058_000048_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\3576_138058_000048_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\3576_138058_000048_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\3576_138058_000048_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\3576_138058_000048_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\3576_138058_000048_000000.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 8</td></tr></tbody><tbody><tr>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\4294_32859_000015_000002.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\4294_32859_000015_000002.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\4294_32859_000015_000002.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\4294_32859_000015_000002.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\4294_32859_000015_000002.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\4294_32859_000015_000002.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\4294_32859_000015_000002.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\4294_32859_000015_000002.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\4294_32859_000015_000002.wav"></audio></td>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 9</td></tr></tbody><tbody><tr>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\4446_2273_000025_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\4446_2273_000025_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\4446_2273_000025_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\4446_2273_000025_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\4446_2273_000025_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\4446_2273_000025_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\4446_2273_000025_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\4446_2273_000025_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\4446_2273_000025_000000.wav"></audio></td>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 10</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\5338_284437_000037_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\5338_284437_000037_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\5338_284437_000037_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\5338_284437_000037_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\5338_284437_000037_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\5338_284437_000037_000001.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\5338_284437_000037_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\5338_284437_000037_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\5338_284437_000037_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\5338_284437_000037_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\5338_284437_000037_000001.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 9</td></tr></tbody><tbody><tr>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 11</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\5536_43358_000011_000002.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\5536_43358_000011_000002.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\5536_43358_000011_000002.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\5536_43358_000011_000002.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\5536_43358_000011_000002.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\5536_43358_000011_000002.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\5536_43358_000011_000002.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\5536_43358_000011_000002.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\5536_43358_000011_000002.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\5536_43358_000011_000002.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\5536_43358_000011_000002.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 10</td></tr></tbody><tbody><tr>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 12</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\6241_61946_000049_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\6241_61946_000049_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\6241_61946_000049_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\6241_61946_000049_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\6241_61946_000049_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\6241_61946_000049_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\6241_61946_000049_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\6241_61946_000049_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\6241_61946_000049_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\6241_61946_000049_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\6241_61946_000049_000000.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 11</td></tr></tbody><tbody><tr>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 13</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\7850_73752_000010_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\7850_73752_000010_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\7850_73752_000010_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\7850_73752_000010_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\7850_73752_000010_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\7850_73752_000010_000000.wav"></audio></td>
+<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\7850_73752_000010_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\7850_73752_000010_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\7850_73752_000010_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\7850_73752_000010_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\7850_73752_000010_000000.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 12</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\8297_275154_000030_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\8297_275154_000030_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\8297_275154_000030_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN_(6_steps)\8297_275154_000030_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN_(6_steps)\8297_275154_000030_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\8297_275154_000030_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\8297_275154_000030_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\8297_275154_000030_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\8297_275154_000030_000001.wav"></audio></td>
 </tr></tbody>
