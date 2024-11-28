@@ -154,16 +154,6 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\84_121123_000015_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\84_121123_000015_000000.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 2</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\174_168635_000024_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\174_168635_000024_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\174_168635_000024_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\174_168635_000024_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\174_168635_000024_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\174_168635_000024_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\174_168635_000024_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\174_168635_000024_000001.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\174_168635_000024_000001.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 3</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\1188_133604_000018_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\1188_133604_000018_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\1188_133604_000018_000000.wav"></audio></td>
@@ -173,7 +163,7 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\1188_133604_000018_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\1188_133604_000018_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\1188_133604_000018_000000.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 4</td></tr></tbody><tbody><tr>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 3</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\1272_135031_000054_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\1272_135031_000054_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\1272_135031_000054_000000.wav"></audio></td>
@@ -183,7 +173,7 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\1272_135031_000054_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\1272_135031_000054_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\1272_135031_000054_000000.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 5</td></tr></tbody><tbody><tr>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 4</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\2277_149896_000023_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\2277_149896_000023_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\2277_149896_000023_000001.wav"></audio></td>
@@ -193,7 +183,7 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\2277_149896_000023_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\2277_149896_000023_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\2277_149896_000023_000001.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 6</td></tr></tbody><tbody><tr>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 5</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\3538_163624_000015_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\3538_163624_000015_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\3538_163624_000015_000000.wav"></audio></td>
@@ -203,7 +193,7 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\3538_163624_000015_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\3538_163624_000015_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\3538_163624_000015_000000.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 7</td></tr></tbody><tbody><tr>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 6</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\3752_4944_000062_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\3752_4944_000062_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\3752_4944_000062_000000.wav"></audio></td>
@@ -213,7 +203,7 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\3752_4944_000062_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\3752_4944_000062_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\3752_4944_000062_000000.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 8</td></tr></tbody><tbody><tr>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 7</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\4294_32859_000015_000002.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\4294_32859_000015_000002.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\4294_32859_000015_000002.wav"></audio></td>
@@ -223,7 +213,7 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\4294_32859_000015_000002.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\4294_32859_000015_000002.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\4294_32859_000015_000002.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 9</td></tr></tbody><tbody><tr>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 8</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\4446_2273_000025_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\4446_2273_000025_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\4446_2273_000025_000000.wav"></audio></td>
@@ -233,7 +223,7 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\4446_2273_000025_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\4446_2273_000025_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\4446_2273_000025_000000.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 10</td></tr></tbody><tbody><tr>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 9</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\5338_284437_000037_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\5338_284437_000037_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\5338_284437_000037_000001.wav"></audio></td>
@@ -243,7 +233,7 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\5338_284437_000037_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\5338_284437_000037_000001.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\5338_284437_000037_000001.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 11</td></tr></tbody><tbody><tr>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 10</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\5536_43358_000011_000002.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\5536_43358_000011_000002.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\5536_43358_000011_000002.wav"></audio></td>
@@ -253,7 +243,7 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\5536_43358_000011_000002.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\5536_43358_000011_000002.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\5536_43358_000011_000002.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 12</td></tr></tbody><tbody><tr>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 11</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\6241_61946_000049_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\6241_61946_000049_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\6241_61946_000049_000000.wav"></audio></td>
@@ -263,7 +253,7 @@ For detailed parameter settings please refer to `WaveFM/src/params.py`.
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\6241_61946_000049_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\6241_61946_000049_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\6241_61946_000049_000000.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 13</td></tr></tbody><tbody><tr>
+</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 12</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\7850_73752_000010_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\7850_73752_000010_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\7850_73752_000010_000000.wav"></audio></td>
