@@ -11,44 +11,44 @@ params = dict(
 
     # params for training
     trainWithHybridPrecision=False,
-    trainLearnRateVelocity=1e-4,
-    trainGamma=0.997,
-    trainLearnRateDecayStep=1000,
+    trainInitialLR=1e-4,
+    trainFinalLR=5e-6,
     trainBetas=(0.9, 0.99),
     trainWeightDecay=5e-4,
     trainSteps=1000000,
     trainBatch=16,
     trainCheckPointSavingStep=10000,
 
-    trainAudiosPath="Your train audios",
-    trainMelsPath="Your train mels",
+    trainAudiosPath=r"Your audios",
+    trainMelsPath=r"Your mel-spectrograms",
     trainCheckPointPath="./checkpoints/WaveFM_0",
     trainDevice="cuda:0",
 
     # params for distillation (training hyperparameters and data are kept)
     distillWithHybridPrecision=False,
-    distillLearnRateVelocity=2e-5,
+    distillInitialLR=2e-5,
+    distillFinalLR=5e-6,
     distillBetas=(0.8, 0.95),
     distillWeightDecay=1e-2,
-    distillGamma=0.95,
-    distillLearnRateDecayStep=1000,
     distillDeltaT=0.01,
     distillSteps=25000,
     distillBatch=16,
     distillCheckPointSavingStep=5000,
     
-
-    distillModelPath="./checkpoints/WaveFM_1000000",
-    distillCheckPointPath="./checkpoints/DistilledWaveFM_0",
-    distillAudiosPath="Your train audios",
-    distillMelsPath="Your train mels",
+    distillModelPath= './checkpoints/WaveFM_1000000',
+    distillCheckPointPath='./distilled_checkpoints/Distilled_WaveFM_0',
+    distillAudiosPath=r"Your audios",
+    distillMelsPath=r"Your mel-spectrograms",
     distillDevice="cuda:0",
 
     # params for inference
     inferenceSteps=6,
-    inferenceMelsPath='Your inference mels',
+    
+    inferenceMelsPath=r"Your inference mel-spectrograms",
     inferenceSavingPath="./generation",
-    inferenceCheckPointPath='./checkpoints/WaveFM_1000000',
+    inferenceCheckPointPath=
+    './checkpoints/WaveFM_1000000',
+    #'./distilled_checkpoints/Distilled_WaveFM_25000',
     inferenceDevice="cuda:0",
 
     # params for model

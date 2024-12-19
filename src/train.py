@@ -2,6 +2,7 @@ import torch
 import torch.optim as optim
 import torch.nn.functional as F
 import torchaudio
+import torch.optim.lr_scheduler as lrs
 import os
 from tqdm import tqdm
 
@@ -21,7 +22,6 @@ def train(mixTraining = params["trainWithHybridPrecision"]):
     )
 
     device = params["trainDevice"]
-    gamma = params["trainGamma"]
     betas = params["trainBetas"]
     weightDecay = params["trainWeightDecay"]
 
@@ -29,15 +29,18 @@ def train(mixTraining = params["trainWithHybridPrecision"]):
 
     vOptimizer = optim.AdamW(
         velocity.parameters(),
-        lr=params["trainLearnRateVelocity"],
+        lr=params["trainInitialLR"],
         betas=betas,
         weight_decay=weightDecay,
     )
 
+    vScheduler = lrs.CosineAnnealingLR(vOptimizer, T_max=params['trainSteps'] , eta_min=params['trainFinalLR'])
+    
     if os.path.exists(params["trainCheckPointPath"]):
         all = torch.load(params["trainCheckPointPath"])
         velocity.load_state_dict(all["velocity"], strict=False)
         vOptimizer.load_state_dict(all["vOptimizer"])
+        vScheduler.load_state_dict(all["vScheduler"])
 
         nowStep = all["step"]
         nowEpoch = all["epoch"]
@@ -65,6 +68,7 @@ def train(mixTraining = params["trainWithHybridPrecision"]):
             {
                 "velocity": velocity.state_dict(),
                 "vOptimizer": vOptimizer.state_dict(),
+                "vScheduler": vScheduler.state_dict(),
                 "step": nowStep,
                 "epoch": nowEpoch,
             },
@@ -87,11 +91,12 @@ def train(mixTraining = params["trainWithHybridPrecision"]):
 
     maximumEnergy = torch.sqrt(torch.tensor(params["melBands"] * 32768.0))
     meanMelLoss = None
-    meanVelocityL1Loss = None
     meanVelocityMSELoss = None
     meanSTFTLoss = None
+    
     velocity.train()
-
+    vScheduler.eta_min=params['trainFinalLR']
+    
     while True:
         tqdmLoader = tqdm(
             trainLoader, desc=f"train Epoch: {nowEpoch}, starting step={nowStep}"
@@ -122,27 +127,21 @@ def train(mixTraining = params["trainWithHybridPrecision"]):
                 melLoss = ((fakeMels - realMels).abs()).mean()
 
                 STFTLoss = getSTFTLoss(x1, predict)
-                velocityL1Loss = (delta.abs()).mean()
                 velocityMSELoss = (delta.pow(2) * scale).mean()
 
                 loss = (
                     velocityMSELoss
-                    + 0.015 * melLoss
-                    + 0.02 * velocityL1Loss
-                    + 0.015 * STFTLoss
+                    + 0.02 * melLoss
+                    + 0.02 * STFTLoss
                 )
 
                 if meanMelLoss is None:
                     meanMelLoss = melLoss.item()
-                    meanVelocityL1Loss = velocityL1Loss.item()
                     meanVelocityMSELoss = velocityMSELoss.sqrt().item()
                     meanSTFTLoss = STFTLoss.item()
 
                 else:
                     meanMelLoss = meanMelLoss * 0.99 + 0.01 * melLoss.item()
-                    meanVelocityL1Loss = (
-                        meanVelocityL1Loss * 0.99 + 0.01 * velocityL1Loss.item()
-                    )
                     meanVelocityMSELoss = (
                         meanVelocityMSELoss * 0.99
                         + 0.01 * velocityMSELoss.sqrt().item()
@@ -150,10 +149,10 @@ def train(mixTraining = params["trainWithHybridPrecision"]):
                     meanSTFTLoss = meanSTFTLoss * 0.99 + 0.01 * STFTLoss.item()
 
                 tqdmLoader.set_postfix(
-                    L1=round(meanVelocityL1Loss, 4),
-                    MSE=round(meanVelocityMSELoss, 4),
+                    MSELoss=round(meanVelocityMSELoss, 4),
                     MelLoss=round(meanMelLoss, 4),
                     STFTLoss=round(meanSTFTLoss, 4),
+                    LR=f"{vScheduler.get_last_lr()[0]:.2e}"
                 )
 
                 vOptimizer.zero_grad()
@@ -161,7 +160,7 @@ def train(mixTraining = params["trainWithHybridPrecision"]):
                 scaler.unscale_(vOptimizer)
                 scaler.step(vOptimizer)
                 scaler.update()
-
+                vScheduler.step()
                 nowStep += 1
 
                 if nowStep % params["trainCheckPointSavingStep"] == 0:
@@ -181,16 +180,13 @@ def train(mixTraining = params["trainWithHybridPrecision"]):
                         {
                             "velocity": velocity.state_dict(),
                             "vOptimizer": vOptimizer.state_dict(),
+                            "vScheduler": vScheduler.state_dict(),
                             "step": nowStep,
                             "epoch": nowEpoch,
                         },
                         path,
                     )
-
-                if nowStep < 1000000:
-                    if nowStep % params["trainLearnRateDecayStep"] == 0:
-                        for param_group in vOptimizer.param_groups:
-                            param_group["lr"] *= gamma
+                    
 
                 if nowStep >= params["trainSteps"]:
                     return

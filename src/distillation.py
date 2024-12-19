@@ -8,6 +8,7 @@ import os
 from tqdm import tqdm, trange
 import matplotlib.pyplot as plt
 import numpy as np
+import torch.optim.lr_scheduler as lrs
 
 from params import params
 from dataset import AudioMelSet
@@ -30,7 +31,6 @@ def distillation(mixTraining=params["distillWithHybridPrecision"]):
     device = params["distillDevice"]
     betas = params["distillBetas"]
     weightDecay = params["distillWeightDecay"]
-    gamma = params["distillGamma"]
 
     velocity = Velocity().to(device)
     velocityTarget = Velocity().to(device)
@@ -38,11 +38,13 @@ def distillation(mixTraining=params["distillWithHybridPrecision"]):
 
     vOptimizer = optim.AdamW(
         velocity.parameters(),
-        lr=params["distillLearnRateVelocity"],
+        lr=params["distillInitialLR"],
         betas=betas,
         weight_decay=weightDecay,
     )
 
+    vScheduler = lrs.CosineAnnealingLR(vOptimizer, T_max=params['distillSteps'] , eta_min=params['distillFinalLR'])
+        
     if os.path.exists(params["distillModelPath"]):
         all = torch.load(params["distillModelPath"])
         velocityAnswer.load_state_dict(all["velocity"])
@@ -55,6 +57,7 @@ def distillation(mixTraining=params["distillWithHybridPrecision"]):
         velocity.load_state_dict(all["velocity"])
         vOptimizer.load_state_dict(all["vOptimizer"])
         velocityTarget.load_state_dict(all["velocityTarget"])
+        vScheduler.load_state_dict(all["vScheduler"])
 
         deltaT = all["deltaT"]
         nowStep = all["step"]
@@ -87,6 +90,7 @@ def distillation(mixTraining=params["distillWithHybridPrecision"]):
                 "velocity": velocity.state_dict(),
                 "vOptimizer": vOptimizer.state_dict(),
                 "velocityTarget": velocityTarget.state_dict(),
+                "vScheduler": vScheduler.state_dict(),
                 "step": nowStep,
                 "epoch": nowEpoch,
                 "distilled": True,
@@ -116,7 +120,6 @@ def distillation(mixTraining=params["distillWithHybridPrecision"]):
     velocityAnswer.eval()
     meanMelLoss = None
     meanSTFTLoss = None
-    meanVelocityL1Loss = None
     meanVelocityMSELoss = None
     while True:
 
@@ -171,13 +174,11 @@ def distillation(mixTraining=params["distillWithHybridPrecision"]):
 
                 melLoss = ((fakeMels - realMels).abs()).mean()
                 STFTLoss = getSTFTLoss(target, studentPredict)
-                velocityL1Loss = (delta.abs()).mean()
                 velocityMSELoss = (delta.pow(2) * (1.0 / (1 - t).clamp(min=0.1))).mean()
                 loss = (
                         velocityMSELoss
-                        + 0.015 * melLoss
-                        + 0.02 * velocityL1Loss
-                        + 0.015 * STFTLoss
+                        + 0.02 * melLoss
+                        + 0.02 * STFTLoss
                 )
 
                 vOptimizer.zero_grad()
@@ -185,7 +186,8 @@ def distillation(mixTraining=params["distillWithHybridPrecision"]):
                 scaler.unscale_(vOptimizer)
                 scaler.step(vOptimizer)
                 scaler.update()
-
+                vScheduler.step()
+                
                 with torch.no_grad():
                     # EMA parameters update
                     velocityDict = dict(velocity.named_parameters())
@@ -198,26 +200,20 @@ def distillation(mixTraining=params["distillWithHybridPrecision"]):
 
                 if meanMelLoss is None:
                     meanMelLoss = melLoss.item()
-                    meanVelocityL1Loss = velocityL1Loss.item()
                     meanVelocityMSELoss = velocityMSELoss.sqrt().item()
                     meanSTFTLoss = STFTLoss.sqrt().item()
                 else:
                     meanMelLoss = meanMelLoss * 0.99 + 0.01 * melLoss.item()
-                    meanVelocityL1Loss = (
-                            meanVelocityL1Loss * 0.99 + 0.01 * velocityL1Loss.item()
-                    )
-                    meanVelocityMSELoss = (
-                            meanVelocityMSELoss * 0.99
-                            + 0.01 * velocityMSELoss.sqrt().item()
-                    )
+                    meanVelocityMSELoss = meanVelocityMSELoss * 0.99 + 0.01 * velocityMSELoss.sqrt().item()
+
                     meanSTFTLoss = meanSTFTLoss * 0.99 + 0.01 * STFTLoss.sqrt().item()
 
                 tqdmLoader.set_postfix(
-                    L1Loss=round(meanVelocityL1Loss, 4),
                     MSELoss=round(meanVelocityMSELoss, 4),
                     MelLoss=round(meanMelLoss, 4),
                     STFTLoss=round(meanSTFTLoss, 4),
                     dt=round(deltaT, 4),
+                    LR=f"{vScheduler.get_last_lr()[0]:.2e}"
                 )
 
                 nowStep += 1
@@ -240,6 +236,7 @@ def distillation(mixTraining=params["distillWithHybridPrecision"]):
                         {
                             "velocity": velocity.state_dict(),
                             "velocityTarget": velocityTarget.state_dict(),
+                            "vScheduler": vScheduler.state_dict(),
                             "vOptimizer": vOptimizer.state_dict(),
                             "step": nowStep,
                             "epoch": nowEpoch,
@@ -248,10 +245,10 @@ def distillation(mixTraining=params["distillWithHybridPrecision"]):
                         },
                         path,
                     )
-
-                if nowStep % params["distillLearnRateDecayStep"] == 0:
-                    for param_group in vOptimizer.param_groups:
-                        param_group["lr"] *= gamma
+                
+                # if nowStep % params["distillLearnRateDecayStep"] == 0:
+                #     for param_group in vOptimizer.param_groups:
+                #         param_group["lr"] *= gamma
 
                 if nowStep >= params["distillSteps"]:
                     return

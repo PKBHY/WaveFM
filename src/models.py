@@ -6,6 +6,30 @@ from modules import AntiAliasingSnake, ResLayer, Snake, UpSampler, DownSampler
 from torch.nn.utils import weight_norm, remove_weight_norm
 
 
+def filterTime(inputs):
+    inputs=torch.nn.functional.pad(inputs,pad=(1,0,1,1),mode='constant')
+    weight=torch.tensor([[-1.0,1.0],
+                        [-2.0,2.0],
+                        [-1.0,1.0]]).to(inputs.device).reshape(1,1,3,2)/4.0
+    deltaT=torch.conv2d(inputs.unsqueeze(1),weight=weight)
+    return deltaT.squeeze(1)
+
+def filterFreq(inputs):
+    inputs=torch.nn.functional.pad(inputs,pad=(1,1,1,0),mode='constant')
+    weight=torch.tensor([[-1.0,-2.0,-1.0],
+                        [1.0,2.0,1.0]]).to(inputs.device).reshape(1,1,2,3)/4.0
+    
+    deltaF=torch.conv2d(inputs.unsqueeze(1),weight=weight)
+    return deltaF.squeeze(1)
+
+def filterLaplacian(inputs):
+    inputs=torch.nn.functional.pad(inputs,pad=(1,1,1,1),mode='constant')
+    weight=torch.tensor([[-1.0,-1.0,-1.0],
+                        [-1.0, 8.0,-1.0],
+                        [-1.0,-1.0,-1.0]]).to(inputs.device).reshape(1,1,3,3)/8.0
+    laplacian=torch.conv2d(inputs.unsqueeze(1),weight=weight)
+    return laplacian.squeeze(1) 
+    
 def getSTFTLoss(
     answer,
     predict,
@@ -44,7 +68,7 @@ def getSTFTLoss(
         predictStftMag = predictStft[..., 0] ** 2 + predictStft[..., 1] ** 2
         
         magnitude_threshold = 1e-6
-        mask = (answerStftMag > magnitude_threshold) & (predictStftMag > magnitude_threshold)
+        mask = (answerStftMag >  magnitude_threshold ) & (predictStftMag >  magnitude_threshold )
         
         answerStftMag = torch.sqrt(answerStftMag + magnitude_threshold)
         predictStftMag = torch.sqrt(predictStftMag + magnitude_threshold)
@@ -57,10 +81,25 @@ def getSTFTLoss(
         )
         
         deltaPhase = answerStftPha - predictStftPha
+        #print(deltaPhase.shape,mask.size(),answerStftMag.mean(),predictStftMag.mean())
         
         loss +=  (torch.atan2(torch.sin(deltaPhase), torch.cos(deltaPhase)).abs()).mean()
         
         loss += (answerStftMag.log() - predictStftMag.log()).abs().mean()
+
+        answerStftMagDT = filterTime(answerStftMag)
+        answerStftMagDF = filterFreq(answerStftMag)
+        answerStftMagLap = filterLaplacian(answerStftMag)
+        
+        predictStftMagDT = filterTime(predictStftMag)
+        predictStftMagDF = filterFreq(predictStftMag)
+        predictStftMagLap = filterLaplacian(predictStftMag)
+        
+        loss +=   5.0 * (answerStftMagDF - predictStftMagDF).pow(2).mean()
+         
+        loss +=   5.0 * (answerStftMagDT - predictStftMagDT).pow(2).mean()
+        
+        loss +=  5.0 * (answerStftMagLap - predictStftMagLap).pow(2).mean()
         
     return loss / len(fft_sizes)
 
@@ -75,7 +114,7 @@ class Velocity(nn.Module):
             t = t.squeeze(-1)  # batch*1*1 -> batch*1
 
         pos = torch.arange(64, device=t.device).unsqueeze(0)  # 1*64
-        table = 100 * t * 10.0 ** (pos * 4.0 / 63.0)  # batch*64
+        table = 100 * t * 10.0 ** (pos *  4.0 / 63.0)  # batch*64
 
         return torch.cat([torch.sin(table), torch.cos(table)], dim=1)  # batch*128
 
